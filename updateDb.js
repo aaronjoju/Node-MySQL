@@ -45,12 +45,10 @@ async function deleteNote(id) {
       return 'Note not found or update failed';
     }
   }
-  const result=await createNote('My Lovely Post','My Lovely Morning');
-console.log(result);
   
-  // const result=await updateNote(3,'Roses','A Rose is a Rose');
-  // const notes= await getNotes();
-  // console.log(notes);
+  const result=await updateNote(3,'Roses','A Rose is a Rose');
+  const notes= await getNotes();
+  console.log(notes);
    
   
 
@@ -60,6 +58,8 @@ console.log(result);
 // const note=await getNote(2);
 // console.log(note);
 
+// const result=await createNote('My Lovely Post','My Lovely Morning');
+// console.log(result);
 
 // const result=await deleteNote(2);
 // const notes= await getNotes();
